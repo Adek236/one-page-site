@@ -1,1 +1,1 @@
-One page site project.
+One page site project. 
