@@ -1,0 +1,24 @@
+@import '../../Styles/Variables.scss';
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    margin: 0 auto;
+    min-height: 100vh;
+    // max-width: 100%;
+    // width: 100vw;
+    background: #a09d9d;
+}
+
+.container {
+    height: 100vh;
+}

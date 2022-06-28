@@ -1,20 +1,21 @@
 import React from 'react';
 import './Styles/App.css';
 import Header from './Components/Header/Header';
+import Layout from './Components/Layout/Layout';
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
   return (
-    // Layout zamiast div \/
-    <div className="App">
+    <Layout>
       <Header>
-        <h1>Hello World.</h1> 
+        <NavBar />
       </Header>
       {/* Main
-          Section
-          Content
+            Section
+              Content
       */}
       {/* Footer */}
-    </div>
+    </Layout>
   );
 }
 

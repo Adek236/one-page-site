@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #a09d9d;
+}
+
+.container {
+  height: 100vh;
+}/*# sourceMappingURL=Layout.css.map */
