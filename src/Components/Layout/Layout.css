@@ -6,12 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0 auto;
-  min-height: 100vh;
-  background: #a09d9d;
-}
-
 .container {
   height: 100vh;
+  background: rgb(182, 171, 171);
 }/*# sourceMappingURL=Layout.css.map */

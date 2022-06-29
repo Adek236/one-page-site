@@ -1,8 +1,54 @@
-@import '../../Styles/Variables.scss';
+@import "../../Styles/Variables.scss";
 
 nav {
-    // height: 30%;
-    ul {
-        display: flex;
+  // position: sticky;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+
+  .nav-mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.3rem;
+    a {
+      letter-spacing: 0.1rem;
+      text-decoration: none;
+      color: white;
     }
+    div {
+      display: flex;
+      svg {
+        color: white;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .nav-desktop {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      li {
+        padding: 0.3rem;
+        list-style-type: none;
+        a {
+          // margin-inline: 0.4rem;
+          letter-spacing: 0.1rem;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+
+  // @media (max-width: 720px) {
+  //     font-size: 1.5rem;
+  //   }
 }

@@ -12,13 +12,13 @@ body {
     // display: flex;
     // justify-content: center;
     // align-items: center;
-    margin: 0 auto;
-    min-height: 100vh;
+    // min-height: 100vh;
     // max-width: 100%;
     // width: 100vw;
-    background: #a09d9d;
+    // margin: 0 auto;
 }
 
 .container {
     height: 100vh;
+    background: $bgColorPriority;
 }
