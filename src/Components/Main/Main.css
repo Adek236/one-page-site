@@ -1,6 +1,22 @@
-.main {
+main {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 75%;
-  background-color: beige;
+  background-color: rgb(0, 0, 0);
+}
+main section .main__image {
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  height: clamp(12rem, 40vw, 35rem);
+}
+main section .main__image div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: clamp(4rem, 10vw, 15rem);
+  width: 100%;
 }/*# sourceMappingURL=Main.css.map */

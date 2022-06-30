@@ -1,5 +1,9 @@
 import { LoremIpsum } from "lorem-ipsum";
 
+import smallDragonImg from "../Styles/images/dragon-xsmall.jpg"
+import bigDragonImg from "../Styles/images/dragon-big.jpg"
+
+
 const lorem = new LoremIpsum({
   sentencesPerParagraph: {
     max: 8,
@@ -19,7 +23,8 @@ export const MainNewsData = [
     {
       title: lorem.generateWords(5),
       description: lorem.generateSentences(2),
-      img: "https://res.cloudinary.com/yaif/image/upload/v1654782198/wizard-dark-dungeon-illustration_yvbdai.jpg",
+      imgSmall: smallDragonImg,
+      imgBig: bigDragonImg,
       alt: lorem.generateSentences(1)
     }
 ]

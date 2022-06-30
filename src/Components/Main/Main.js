@@ -3,16 +3,24 @@ import "./Main.css";
 import { MainNewsData as data } from "../../Data/Data";
 
 const Main = ({ children }) => {
-
   return (
-    <div className="main">
-      <img src={data[0].img} alt={data[0].alt} />
-      <h1>{data[0].title}</h1>
-      <p>{data[0].description}</p>
+    <main>
+      {/* <img src={data[0].imgSmall} alt={data[0].alt} /> */}
+      <section>
+        <div
+          className="main__image"
+          style={{ backgroundImage: `url(${data[0].imgSmall})` }}
+        >
+          <div>
+            <h1>{data[0].title}</h1>
+          </div>
+        </div>
+        <p>{data[0].description}</p>
+      </section>
 
       <h2>Latest news:</h2>
       <div>{children}</div>
-    </div>
+    </main>
   );
 };
 
