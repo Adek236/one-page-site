@@ -21,8 +21,8 @@ const lorem = new LoremIpsum({
 
 export const MainNewsData = [
     {
-      title: lorem.generateWords(5),
-      description: lorem.generateSentences(2),
+      title: lorem.generateWords(3),
+      description: lorem.generateSentences(4),
       imgSmall: smallDragonImg,
       imgBig: bigDragonImg,
       alt: lorem.generateSentences(1)

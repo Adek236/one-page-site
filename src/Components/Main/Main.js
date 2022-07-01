@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
 import { MainNewsData as data } from "../../Data/Data";
+import Button from "../Button/Button";
 
 const Main = ({ children }) => {
   return (
@@ -16,6 +17,8 @@ const Main = ({ children }) => {
           </div>
         </div>
         <p>{data[0].description}</p>
+        <Button bgColor="primary"/>
+        <Button />
       </section>
 
       <h2>Latest news:</h2>
