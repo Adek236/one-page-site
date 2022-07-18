@@ -1,0 +1,7 @@
+.common-news {
+  display: flex;
+  flex-grow: 1;
+  background-color: rgb(161, 73, 73);
+  height: 50vw;
+  width: 29rem;
+}/*# sourceMappingURL=News.css.map */
