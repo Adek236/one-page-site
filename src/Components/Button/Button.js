@@ -1,25 +1,21 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ( { bgColor } ) => {
-  console.log(bgColor)
-  let btnBgColor = "";
-  if (bgColor === "primary") {
-
-    btnBgColor = "rgb(182, 123, 123)";
-    // btnBgColor = "$btnColorPrimary";
-  }
-
+const Button = ({ bgColor }) => {
   return (
-    <div className="buttonOuter">
-      <div className="buttonInner" style={{backgroundColor: btnBgColor}}>
-        <div className="buttonTitle">
-          Button
-        </div>
-        <a href="/elo"></a>
+    <div className={
+      bgColor === "secondary" ? "buttonOuter secondaryBorder" : "buttonOuter"
+    }>
+      <div
+        className={
+          bgColor === "secondary" ? "buttonInner secondaryBg" : "buttonInner"
+        }
+      >
+        <div className="buttonTitle">Button</div>
+        <a href="/elo"> </a>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Button;

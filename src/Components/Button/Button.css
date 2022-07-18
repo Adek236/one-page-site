@@ -2,15 +2,15 @@
   position: relative;
   height: 3rem;
   width: 10rem;
-  border: 1px solid red;
   border-radius: 0.1rem;
+  border: 1px solid rgb(114, 125, 189);
 }
 .buttonOuter .buttonInner {
   height: 100%;
-  background-color: rgb(53, 82, 72);
+  background-color: rgb(107, 35, 35);
 }
 .buttonOuter .buttonInner:hover {
-  background-color: rgb(83, 119, 106);
+  background-color: rgb(150, 57, 57);
 }
 .buttonOuter .buttonInner a {
   position: absolute;
@@ -18,4 +18,23 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+.buttonOuter .buttonInner .buttonTitle {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+.buttonOuter .secondaryBg {
+  background-color: rgb(53, 28, 82);
+}
+.buttonOuter .secondaryBg:hover {
+  background-color: rgb(75, 40, 116);
+}
+
+.secondaryBorder {
+  border: 1px solid rgb(176, 202, 58);
 }/*# sourceMappingURL=Button.css.map */

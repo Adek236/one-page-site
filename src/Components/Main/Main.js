@@ -17,8 +17,10 @@ const Main = ({ children }) => {
           </div>
         </div>
         <p>{data[0].description}</p>
-        <Button bgColor="primary"/>
-        <Button />
+        <div className="main__buttons">
+          <Button bgColor="secondary" />
+          <Button />
+        </div>
       </section>
 
       <h2>Latest news:</h2>

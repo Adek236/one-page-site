@@ -4,13 +4,13 @@
     position: relative;
     height: 3rem;
     width: 10rem;
-    border: 1px solid red;
     border-radius: 0.1rem;
+    border: 1px solid $btnBorderColorPrimary;
     .buttonInner {
         height: 100%;
-        background-color: rgb(53, 82, 72);
+        background-color: $btnColorPrimary;
         &:hover {
-            background-color: rgb(83, 119, 106); 
+            background-color: $btnColorPrimaryHover; 
         }
         a {
             position: absolute;
@@ -19,5 +19,24 @@
             left: 0;
             right: 0;
         }
+        .buttonTitle {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .75rem;
+            text-transform: uppercase;
+            letter-spacing: .05rem;
+        }
     }
+    .secondaryBg {
+        background-color: $btnColorSecondary;
+        &:hover {
+            background-color: $btnColorSecondaryHover; 
+        }
+    }
+}
+
+.secondaryBorder {
+    border: 1px solid $btnBorderColorSecondary;
 }
