@@ -1,10 +1,19 @@
+@import '../../Styles/Variables.scss';
+
 .common-news {
-    display: flex;
-    flex-grow: 1;
-    background-color: rgb(161, 73, 73);
-    // min-height: 13rem;
-    height: 50vw;
-    // max-height: 16rem;
-    // min-width: 20rem;
-    width: 29rem;
+  display: flex;
+  flex-grow: 1;
+  background-color: rgb(161, 73, 73);
+  // min-height: 13rem;
+  height: 50vw;
+  // max-height: 16rem;
+  // min-width: 20rem;
+  width: 29rem;
+  @media (min-width: $newsBreakPointMedium) {
+    height: 25vw;
+  }
+  @media (min-width: $newsBreakPointLarge) {
+    height: 13vw;
+    width: 14.5rem;
+  }
 }

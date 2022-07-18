@@ -4,4 +4,15 @@
   background-color: rgb(161, 73, 73);
   height: 50vw;
   width: 29rem;
+}
+@media (min-width: 993px) {
+  .common-news {
+    height: 25vw;
+  }
+}
+@media (min-width: 1473px) {
+  .common-news {
+    height: 13vw;
+    width: 14.5rem;
+  }
 }/*# sourceMappingURL=News.css.map */
