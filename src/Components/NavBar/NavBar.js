@@ -7,8 +7,8 @@ import "./NavBar.css";
 
 function NavBar() {
   return (
-    <nav>
-      <div className="nav-mobile">
+    <div className="nav-bar">
+      <nav className="nav-mobile">
       <div>
           <PersonIcon />
         </div>
@@ -18,10 +18,10 @@ function NavBar() {
         <div>
           <MenuIcon />
         </div>
-      </div>
+      </nav>
 
       {/* 
-      <div className="nav-desktop">
+      <nav className="nav-desktop">
       <ul>
         <li>
           <a href="/"> HOME </a>
@@ -39,9 +39,9 @@ function NavBar() {
           <a href="/"> SUPPORT </a>
         </li>
       </ul> 
-      </div>
+      </nav>
       */}
-    </nav>
+    </div>
   );
 }
 

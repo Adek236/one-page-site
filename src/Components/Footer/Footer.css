@@ -1,3 +1,70 @@
 footer {
-  background-color: burlywood;
+  margin-top: 0.1rem;
+  background-color: rgb(16, 0, 0);
+}
+footer .socials {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 5rem;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(48, 0, 0);
+  border: 0.1rem solid rgba(235, 222, 194, 0.2);
+}
+footer .socials .title h3 {
+  letter-spacing: 0.05rem;
+}
+footer .socials .icons ul {
+  display: flex;
+  list-style: none;
+}
+footer .socials .icons ul li {
+  margin-inline: 0.2rem;
+}
+footer .socials .icons ul li a {
+  color: rgb(235, 222, 194);
+}
+footer .socials .icons ul li a:hover {
+  color: #c0b499;
+}
+footer .others {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .others .logo {
+  height: 20%;
+  padding-top: 1rem;
+}
+footer .others .logo svg {
+  font-size: 3rem;
+}
+footer .others nav {
+  height: 60%;
+  padding-bottom: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01rem;
+}
+footer .others nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+footer .others nav ul li a {
+  color: rgb(235, 222, 194);
+  text-decoration: none;
+}
+footer .others nav ul li a:hover {
+  color: #c0b499;
+}
+footer .others .copyright {
+  display: flex;
+  height: 20%;
+  justify-content: flex-end;
+  font-size: 0.8rem;
 }/*# sourceMappingURL=Footer.css.map */

@@ -1,47 +1,44 @@
-nav {
+.nav-bar {
   height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  box-shadow: 0px 1px 5px 0px #000000;
+  background-color: rgb(24, 0, 0);
+  box-shadow: 0px 1px 5px 0px rgb(24, 0, 0);
 }
-nav .nav-mobile {
+.nav-bar .nav-mobile {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 0.3rem;
 }
-nav .nav-mobile a {
+.nav-bar .nav-mobile a {
   letter-spacing: 0.1rem;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }
-nav .nav-mobile div {
+.nav-bar .nav-mobile div {
   display: flex;
 }
-nav .nav-mobile div svg {
-  color: white;
+.nav-bar .nav-mobile div svg {
+  color: #ffffff;
 }
-nav .nav-mobile div:nth-child(2) svg {
-  color: rgb(87, 204, 198);
+.nav-bar .nav-mobile div:nth-child(2) svg {
+  color: rgb(235, 222, 194);
   font-size: 3rem;
 }
-nav .nav-mobile div:hover {
-  cursor: pointer;
-}
-nav .nav-desktop ul {
+.nav-bar .nav-desktop ul {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-nav .nav-desktop ul li {
+.nav-bar .nav-desktop ul li {
   padding: 0.3rem;
   list-style-type: none;
 }
-nav .nav-desktop ul li a {
+.nav-bar .nav-desktop ul li a {
   letter-spacing: 0.1rem;
   text-decoration: none;
-  color: white;
+  color: #ffffff;
 }/*# sourceMappingURL=NavBar.css.map */

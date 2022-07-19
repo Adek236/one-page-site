@@ -3,14 +3,14 @@
   height: 3rem;
   width: 10rem;
   border-radius: 0.1rem;
-  border: 1px solid rgb(114, 125, 189);
+  border: 1px solid rgb(40, 40, 40);
 }
 .buttonOuter .buttonInner {
   height: 100%;
-  background-color: rgb(107, 35, 35);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .buttonOuter .buttonInner:hover {
-  background-color: rgb(150, 57, 57);
+  background-color: rgb(40, 40, 40);
 }
 .buttonOuter .buttonInner a {
   position: absolute;
@@ -29,12 +29,12 @@
   letter-spacing: 0.05rem;
 }
 .buttonOuter .secondaryBg {
-  background-color: rgb(53, 28, 82);
+  background-color: rgb(48, 0, 0);
 }
 .buttonOuter .secondaryBg:hover {
-  background-color: rgb(75, 40, 116);
+  background-color: rgb(80, 0, 0);
 }
 
 .secondaryBorder {
-  border: 1px solid rgb(176, 202, 58);
+  border: 1px solid rgb(80, 0, 0);
 }/*# sourceMappingURL=Button.css.map */

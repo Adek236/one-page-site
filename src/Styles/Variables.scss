@@ -1,18 +1,25 @@
 // Colors
 $bgColorPriority: #000000;
-$mainFontColor: #ebdec2;
+$mainFontColor: rgb(235, 222, 194);
+$mainFontColorSecondary: #ffffff;
+$navBarColor: rgb(24, 0, 0);
+$footerColor: rgb(16, 0, 0);
+$footerSocialsColor: rgb(48, 0, 0);
+$footerSocialsBorderColor: rgb(235, 222, 194, 0.2);
+$footerNavHoverColor: #c0b499;
+
 // Buttons colors
-$btnColorPrimary: rgb(107, 35, 35);
-$btnColorPrimaryHover: rgb(150, 57, 57);
-$btnBorderColorPrimary: rgb(114, 125, 189);
-$btnColorSecondary: rgb(53, 28, 82);
-$btnColorSecondaryHover: rgb(75, 40, 116);
-$btnBorderColorSecondary: rgb(176, 202, 58);
+$btnColorPrimary: rgb(0, 0, 0, 0.2);
+$btnColorPrimaryHover: rgb(40,40,40);
+$btnBorderColorPrimary: rgb(40,40,40);
+$btnColorSecondary: rgb(48,0,0);
+$btnColorSecondaryHover: rgb(80,0,0);
+$btnBorderColorSecondary: rgb(80,0,0);
 
 // Fonts
-$mainFont: "Open Sans","Arial","Helvetica", sans-serif;
-$mainTitleFont: "Roboto","Open Sans","Arial","Helvetica", sans-serif;
+$mainFont: "Open Sans", "Arial", "Helvetica", sans-serif;
+$mainTitleFont: "Roboto", "Open Sans", "Arial", "Helvetica", sans-serif;
 
 // NewsBreakPoint
-$newsBreakPointMedium : 993px;
-$newsBreakPointLarge : 1280px;
+$newsBreakPointMedium: 993px;
+$newsBreakPointLarge: 1280px;

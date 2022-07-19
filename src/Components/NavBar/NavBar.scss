@@ -1,13 +1,13 @@
 @import "../../Styles/Variables.scss";
 
-nav {
+.nav-bar {
   // position: sticky;
   height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  box-shadow: 0px 1px 5px 0px #000000;
+  background-color: $navBarColor;
+  box-shadow: 0px 1px 5px 0px $navBarColor;
 
   .nav-mobile {
     display: flex;
@@ -18,21 +18,18 @@ nav {
     a {
       letter-spacing: 0.1rem;
       text-decoration: none;
-      color: white;
+      color: $mainFontColorSecondary;
     }
     div {
       display: flex;
       svg {
-        color: white;
+        color: $mainFontColorSecondary;
       }
       &:nth-child(2) {
         svg {
-          color: rgb(87, 204, 198);
+          color: $mainFontColor;
           font-size: 3rem;
-      }
-      }
-      &:hover {
-        cursor: pointer;
+        }
       }
     }
   }
@@ -49,7 +46,7 @@ nav {
           // margin-inline: 0.4rem;
           letter-spacing: 0.1rem;
           text-decoration: none;
-          color: white;
+          color: $mainFontColorSecondary;
         }
       }
     }
