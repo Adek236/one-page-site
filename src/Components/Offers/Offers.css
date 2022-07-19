@@ -1,0 +1,17 @@
+.offers {
+  display: flex;
+  flex-grow: 1;
+  background-color: rgb(72, 119, 163);
+  height: 65vw;
+  width: 100%;
+}
+@media (min-width: 993px) {
+  .offers {
+    height: 35vw;
+  }
+}
+@media (min-width: 1280px) {
+  .offers {
+    height: 30vw;
+  }
+}/*# sourceMappingURL=Offers.css.map */

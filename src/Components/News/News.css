@@ -10,7 +10,7 @@
     height: 25vw;
   }
 }
-@media (min-width: 1473px) {
+@media (min-width: 1280px) {
   .common-news {
     height: 13vw;
     width: 14.5rem;

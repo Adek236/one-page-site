@@ -1,9 +1,9 @@
-.four-box {
+.double-box {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    padding: .5rem 1rem;
+    gap: .2rem;
+    padding: .1rem 0rem;
     width: 100%;
 }

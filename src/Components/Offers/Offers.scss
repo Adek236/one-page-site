@@ -1,16 +1,16 @@
 @import "../../Styles/Variables.scss";
 
-.common-news {
+.offers {
   display: flex;
   flex-grow: 1;
-  background-color: rgb(161, 73, 73);
-  height: 50vw;
-  width: 29rem;
+  background-color: rgb(72, 119, 163);
+  height: 65vw;
+//   width: 30rem;
+  width: 100%;
   @media (min-width: $newsBreakPointMedium) {
-    height: 25vw;
+    height: 35vw;
   }
   @media (min-width: $newsBreakPointLarge) {
-    height: 13vw;
-    width: 14.5rem;
+    height: 30vw;
   }
 }

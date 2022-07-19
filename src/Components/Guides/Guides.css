@@ -1,0 +1,17 @@
+.guides {
+  display: flex;
+  flex-grow: 1;
+  background-color: rgb(133, 177, 97);
+  height: 65vw;
+  width: 30.4rem;
+}
+@media (min-width: 993px) {
+  .guides {
+    height: 40vw;
+  }
+}
+@media (min-width: 1280px) {
+  .guides {
+    height: 30vw;
+  }
+}/*# sourceMappingURL=Guides.css.map */

@@ -5,13 +5,17 @@ import NavBar from './Components/NavBar/NavBar';
 import Main from './Components/Main/Main';
 import News from './Components/News/News';
 import FourBox from './Components/Containers/FourBox/FourBox';
+import DoubleBox from './Components/Containers/DoubleBox/DoubleBox';
+import SingleBox from './Components/Containers/SingleBox/SingleBox';
 import Footer from './Components/Footer/Footer';
+import Guides from './Components/Guides/Guides';
+import Offers from './Components/Offers/Offers';
 
 function App() {
   return (
     <Layout>
       <Header>
-        <NavBar />
+        <NavBar/>
       </Header>
       <Main>
         <FourBox>
@@ -20,6 +24,22 @@ function App() {
           <News/>
           <News/>
         </FourBox>
+        <DoubleBox>
+          <Guides/>
+          <Guides/>
+        </DoubleBox>
+        <SingleBox>
+          <Offers/>
+          <Offers/>
+          <Offers/>
+        </SingleBox>
+        <DoubleBox>
+          <Guides/>
+          <Guides/>
+        </DoubleBox>
+        <SingleBox>
+          <Offers/>
+        </SingleBox>
       </Main>
       {/* Main
             Section
