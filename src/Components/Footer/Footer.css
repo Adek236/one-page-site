@@ -1,6 +1,6 @@
 footer {
   margin-top: 0.1rem;
-  background-color: rgb(16, 0, 0);
+  background-color: rgb(8, 0, 0);
 }
 footer .socials {
   display: flex;
@@ -10,7 +10,7 @@ footer .socials {
   padding: 0.5rem;
   align-items: center;
   justify-content: center;
-  background-color: rgb(48, 0, 0);
+  background-color: rgb(16, 0, 0);
   border: 0.1rem solid rgba(235, 222, 194, 0.2);
 }
 footer .socials .title h3 {

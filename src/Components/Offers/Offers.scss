@@ -1,12 +1,83 @@
 @import "../../Styles/Variables.scss";
 
 .offers {
+  position: relative;
   display: flex;
   flex-grow: 1;
-  background-color: rgb(72, 119, 163);
-  height: 65vw;
-//   width: 30rem;
+  flex-direction: column;
+  height: 80vw;
   width: 100%;
+  border: 1px solid $borderColorPrimary;
+  &__image {
+    height: 50%;
+    background-color: $bgColorPriority;
+    background-size: cover;
+    background-position: center;
+    @media (min-width: $newsBreakPointMedium) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100%;
+    }
+    &__desc {
+      display: none;
+      flex-direction: column;
+      width: 40%;
+      margin-left: 4rem;
+      @media (min-width: $newsBreakPointMedium) {
+        display: flex;
+      }
+      &__info {
+        &__prev-title {
+          font-size: 0.8rem;
+        }
+        > p {
+          padding: 1rem 0;
+        }
+      }
+      &__btns {
+        display: flex;
+        > div {
+          margin-inline-end: 0.6rem;
+        }
+      }
+    }
+  }
+  &__desc {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: $bgColorSecondary;
+    border-top: 0.05rem solid $borderColorPrimary;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 70%;
+      width: 75%;
+      &__prev-title {
+        font-size: 0.85rem;
+      }
+      > p {
+        padding-top: 1rem;
+        font-size: clamp(0.3rem, 2.2vw, 1rem);
+      }
+    }
+    &__btns {
+      display: flex;
+      height: 30%;
+      > div {
+        margin-inline: 0.6rem;
+      }
+    }
+    @media (min-width: $newsBreakPointMedium) {
+      display: none;
+    }
+  }
   @media (min-width: $newsBreakPointMedium) {
     height: 35vw;
   }

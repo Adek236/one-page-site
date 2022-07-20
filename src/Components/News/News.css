@@ -43,7 +43,7 @@
   }
 }
 .news:hover {
-  border: 0.08rem solid rgb(128, 0, 0);
+  border: 0.08rem solid rgb(235, 222, 194);
 }
 .news:hover .news__desc > * {
   color: #ffffff;

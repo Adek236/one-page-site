@@ -23,6 +23,12 @@
     justify-content: center;
     background-color: $bgColorSecondary;
     border-top: 0.05rem solid $borderColorPrimary;
+    &__prev-title {
+      font-size: 0.8rem;
+    }
+    > h2 {
+      font-size: 1.3rem;
+    }
   }
   &:hover {
     border: 1px solid $borderColorSecondary;
