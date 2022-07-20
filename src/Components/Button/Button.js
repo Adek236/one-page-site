@@ -12,7 +12,7 @@ const Button = ({ bgColor }) => {
         }
       >
         <div className="buttonTitle">Button</div>
-        <a href="/elo"> </a>
+        <a className="fill-container" href="/elo"> </a>
       </div>
     </div>
   );

@@ -48,7 +48,7 @@ main section .main__buttons > div {
     justify-content: center;
   }
 }
-main h2 {
+main > h2 {
   padding-left: 1rem;
   font-size: 1.2rem;
 }/*# sourceMappingURL=Main.css.map */

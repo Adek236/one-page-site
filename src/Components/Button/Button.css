@@ -12,13 +12,6 @@
 .buttonOuter .buttonInner:hover {
   background-color: rgb(40, 40, 40);
 }
-.buttonOuter .buttonInner a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
 .buttonOuter .buttonInner .buttonTitle {
   height: 100%;
   display: flex;

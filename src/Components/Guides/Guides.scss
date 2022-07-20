@@ -1,11 +1,32 @@
 @import "../../Styles/Variables.scss";
 
 .guides {
+  position: relative;
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
-  background-color: rgb(133, 177, 97);
   height: 65vw;
   width: 30.4rem;
+  border: 1px solid $borderColorPrimary;
+  &__image {
+    height: 70%;
+    background-color: $bgColorPriority;
+    background-size: cover;
+    background-position: center;
+  }
+  &__desc {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+    background-color: $bgColorSecondary;
+    border-top: 0.05rem solid $borderColorPrimary;
+  }
+  &:hover {
+    border: 1px solid $borderColorSecondary;
+  }
   @media (min-width: $newsBreakPointMedium) {
     height: 40vw;
   }

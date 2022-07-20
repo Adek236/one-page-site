@@ -1,19 +1,27 @@
-@import '../../Styles/Variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*, 
-*::before, 
+@import "../../Styles/Variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+*::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .container {
-    position: relative;
-    min-height: 100vh;
-    background: $bgColorPriority;
-    font-family: $mainFont;
-    font-weight: 400;
-    line-height: 1.5;
-    color: $mainFontColor;
+  position: relative;
+  min-height: 100vh;
+  background: $bgColorPriority;
+  font-family: $mainFont;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $mainFontColor;
+}
+
+.fill-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
