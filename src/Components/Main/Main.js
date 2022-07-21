@@ -12,10 +12,19 @@ const Main = ({ children }) => {
           className="main__image"
           style={{ backgroundImage: `url(${data[0].imgSmall})` }}
         >
-          <div>
+          {/* large screen */}
+          <div className="main__image__blackout fill-container"></div>
+          <div className="main__image__title">
+            {/* both screen */}
             <h1>{data[0].title}</h1>
           </div>
+          <p className="main__image__desc">{data[0].description}</p>
+          <div className="main__image__buttons">
+            <Button bgColor="secondary" />
+            <Button />
+          </div>
         </div>
+        {/* small screen  */}
         <p>{data[0].description}</p>
         <div className="main__buttons">
           <Button bgColor="secondary" />

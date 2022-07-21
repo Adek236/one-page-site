@@ -55,7 +55,7 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-        <div className="copyright">2022 ALL RIGHTS RESERVED.</div>
+        <div className="copyright text-shadow">2022 ALL RIGHTS RESERVED.</div>
       </div>
     </footer>
   );

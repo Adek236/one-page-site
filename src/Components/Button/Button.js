@@ -11,7 +11,7 @@ const Button = ({ bgColor }) => {
           bgColor === "secondary" ? "buttonInner secondaryBg" : "buttonInner"
         }
       >
-        <div className="buttonTitle">Button</div>
+        <div className="buttonTitle text-shadow">Button</div>
         <a className="fill-container" href="/elo"> </a>
       </div>
     </div>

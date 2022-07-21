@@ -29,9 +29,9 @@ function App() {
           <Guides/>
         </DoubleBox>
         <SingleBox>
+          <Offers descSide="right"/>
           <Offers/>
-          <Offers/>
-          <Offers/>
+          <Offers descSide="right"/>
         </SingleBox>
         <DoubleBox>
           <Guides/>

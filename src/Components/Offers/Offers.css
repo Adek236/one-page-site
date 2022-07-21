@@ -17,7 +17,6 @@
   .offers__image {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     height: 100%;
   }
 }
@@ -34,6 +33,9 @@
 }
 .offers__image__desc__info__prev-title {
   font-size: 0.8rem;
+}
+.offers__image__desc__info > h2 {
+  font-size: 2.5rem;
 }
 .offers__image__desc__info > p {
   padding: 1rem 0;

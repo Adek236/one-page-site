@@ -16,7 +16,7 @@
     @media (min-width: $newsBreakPointMedium) {
       display: flex;
       align-items: center;
-      justify-content: flex-start;
+      // justify-content: flex-end;
       height: 100%;
     }
     &__desc {
@@ -30,6 +30,9 @@
       &__info {
         &__prev-title {
           font-size: 0.8rem;
+        }
+        > h2 {
+          font-size: 2.5rem;
         }
         > p {
           padding: 1rem 0;

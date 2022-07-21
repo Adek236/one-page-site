@@ -10,11 +10,11 @@ const News = () => {
       style={{ backgroundImage: `url(${data[0].imgSmall})` }}
     >
       <div className="news__desc">
-        <div className="news__desc__date">Date</div>
+        <div className="news__desc__date text-shadow">Date</div>
         <h2>Title News</h2>
       </div>
       <div className="news__blackout fill-container"></div>
-      <a className="fill-container" href="/" />
+      <a className="fill-container" href="/" > </a>
     </section>
   );
 };
