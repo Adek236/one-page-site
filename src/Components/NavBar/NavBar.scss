@@ -1,7 +1,7 @@
 @import "../../Styles/Variables.scss";
 
 .nav-bar {
-  height: 4rem;
+  height: 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,9 +15,8 @@
     width: 100%;
     padding: 0.3rem;
     a {
-      letter-spacing: 0.1rem;
-      text-decoration: none;
-      color: $mainFontColorSecondary;
+      display: flex;
+      align-items: center;
     }
     div {
       display: flex;
@@ -31,27 +30,51 @@
         }
       }
     }
-  }
-
-  .nav-desktop {
-    ul {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      li {
-        padding: 0.3rem;
-        list-style-type: none;
-        a {
-          // margin-inline: 0.4rem;
-          letter-spacing: 0.1rem;
-          text-decoration: none;
-          color: $mainFontColorSecondary;
-        }
-      }
+    @media (min-width: $newsBreakPointMedium) {
+      display: none;
     }
   }
 
-  // @media (max-width: 720px) {
-  //     font-size: 1.5rem;
-  //   }
+  .nav-desktop {
+    display: none;
+    width: 100%;
+    > div {
+      padding-left: 4rem;
+      svg {
+        font-size: 3rem;
+      }
+    }
+    > ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 4rem;
+      width: 100%;
+      > li {
+        margin-inline: 0.5rem;
+        padding: 0.3rem;
+        list-style-type: none;
+        > a {
+          letter-spacing: 0.1rem;
+          &:hover {
+            color: $hoverColorPriority;
+          }
+        }
+      }
+      > li:nth-last-child(1) {
+        a {
+          color: $mainFontColorSecondary;
+          &:hover {
+            color: $hoverColorSecondary;
+          }
+        }
+        svg {
+          font-size: 1rem;
+        }
+      }
+    }
+    @media (min-width: $newsBreakPointMedium) {
+      display: flex;
+    }
+  }
 }
