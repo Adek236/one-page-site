@@ -29,6 +29,11 @@
           font-size: 3rem;
         }
       }
+      &:nth-child(3) {
+        svg:hover {
+          cursor: pointer;
+        }
+      }
     }
     @media (min-width: $newsBreakPointMedium) {
       display: none;

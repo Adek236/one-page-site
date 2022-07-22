@@ -6,6 +6,9 @@ import "./NavBar.css";
 // import { Link } from "react-router-dom";
 
 function NavBar() {
+
+  
+
   return (
     <div className="nav-bar">
       <nav className="nav-mobile">
@@ -19,7 +22,7 @@ function NavBar() {
             <DiamondIcon />
           </a>
         </div>
-        <div>
+        <div onClick={() => console.log("elo")}>
           <MenuIcon />
         </div>
       </nav>

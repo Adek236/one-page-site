@@ -10,10 +10,13 @@ import SingleBox from './Components/Containers/SingleBox/SingleBox';
 import Footer from './Components/Footer/Footer';
 import Guides from './Components/Guides/Guides';
 import Offers from './Components/Offers/Offers';
+import Modal from './Components/Modal/Modal';
+
 
 function App() {
   return (
     <Layout>
+      <Modal/>
       <Header>
         <NavBar/>
       </Header>

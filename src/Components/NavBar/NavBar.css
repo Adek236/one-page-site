@@ -27,6 +27,9 @@
   color: rgb(235, 222, 194);
   font-size: 3rem;
 }
+.nav-bar .nav-mobile div:nth-child(3) svg:hover {
+  cursor: pointer;
+}
 @media (min-width: 993px) {
   .nav-bar .nav-mobile {
     display: none;
