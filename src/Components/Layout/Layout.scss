@@ -40,6 +40,10 @@ a {
   color: $mainFontColor;
 }
 
+ul {
+  list-style: none;
+}
+
 .flex-center {
   display: flex;
   align-items: center;

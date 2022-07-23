@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 
 const Main = ({ children }) => {
   return (
-    <main>
+    <main className="main">
       {/* <img src={data[0].imgSmall} alt={data[0].alt} /> */}
       <section>
         <div

@@ -7,12 +7,12 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="socials">
-        <div className="title">
+    <footer className="main-footer">
+      <div className="main-footer__socials flex-center">
+        <div className="main-footer__socials__title">
           <h3>OUR SOCIALS</h3>
         </div>
-        <div className="icons">
+        <div className="main-footer__socials__icons">
           <ul>
             <li>
               <a href="/">
@@ -32,11 +32,11 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="others">
-        <div className="logo">
+      <div className="main-footer__others flex-center">
+        <div className="main-footer__others__logo">
           <DiamondIcon />
         </div>
-        <nav className="footer-nav">
+        <nav className="main-footer__others__nav">
           <ul>
             <li>
               <a href="/">About</a>
@@ -55,7 +55,7 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-        <div className="copyright text-shadow">2022 ALL RIGHTS RESERVED.</div>
+        <div className="main-footer__copyright text-shadow">2022 ALL RIGHTS RESERVED.</div>
       </div>
     </footer>
   );

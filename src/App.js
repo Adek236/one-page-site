@@ -1,56 +1,50 @@
-import React from 'react';
-import Header from './Components/Header/Header';
-import Layout from './Components/Layout/Layout';
-import NavBar from './Components/NavBar/NavBar';
-import Main from './Components/Main/Main';
-import News from './Components/News/News';
-import FourBox from './Components/Containers/FourBox/FourBox';
-import DoubleBox from './Components/Containers/DoubleBox/DoubleBox';
-import SingleBox from './Components/Containers/SingleBox/SingleBox';
-import Footer from './Components/Footer/Footer';
-import Guides from './Components/Guides/Guides';
-import Offers from './Components/Offers/Offers';
-import Modal from './Components/Modal/Modal';
-
+import React, { useState } from "react";
+import Header from "./Components/Header/Header";
+import Layout from "./Components/Layout/Layout";
+import NavBar from "./Components/NavBar/NavBar";
+import Main from "./Components/Main/Main";
+import News from "./Components/News/News";
+import FourBox from "./Components/Containers/FourBox/FourBox";
+import DoubleBox from "./Components/Containers/DoubleBox/DoubleBox";
+import SingleBox from "./Components/Containers/SingleBox/SingleBox";
+import Footer from "./Components/Footer/Footer";
+import Guides from "./Components/Guides/Guides";
+import Offers from "./Components/Offers/Offers";
+import Modal from "./Components/Modal/Modal";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <Layout>
-      <Modal/>
+      <Modal showModal={showModal} setShowModal={setShowModal} />
       <Header>
-        <NavBar/>
+        <NavBar setShowModal={setShowModal} />
       </Header>
       <Main>
         <FourBox>
-          <News/>
-          <News/>
-          <News/>
-          <News/>
+          <News />
+          <News />
+          <News />
+          <News />
         </FourBox>
         <DoubleBox>
-          <Guides/>
-          <Guides/>
+          <Guides />
+          <Guides />
         </DoubleBox>
         <SingleBox>
-          <Offers descSide="right"/>
-          <Offers/>
-          <Offers descSide="right"/>
+          <Offers descSide="right" />
+          <Offers />
+          <Offers descSide="right" />
         </SingleBox>
         <DoubleBox>
-          <Guides/>
-          <Guides/>
+          <Guides />
+          <Guides />
         </DoubleBox>
         <SingleBox>
-          <Offers/>
+          <Offers />
         </SingleBox>
       </Main>
-      {/* Main
-            Section
-              Content
-      */}
-      <Footer>
-        Footer
-      </Footer>
+      <Footer>Footer</Footer>
     </Layout>
   );
 }

@@ -1,57 +1,43 @@
 @import "../../Styles/Variables.scss";
 
-footer {
-  //   display: flex;
-  //   flex-grow: 1;
-  //   flex-direction: column;
+.main-footer {
   margin-top: 0.1rem;
   background-color: $footerColor;
-  .socials {
-    display: flex;
+  &__socials {
     flex-direction: column;
     flex-grow: 1;
     min-height: 5rem;
     padding: 0.5rem;
-    align-items: center;
-    justify-content: center;
     background-color: $footerSocialsColor;
     border: 0.1rem solid $footerSocialsBorderColor;
-    .title {
+    &__title {
       h3 {
         letter-spacing: 0.05rem;
       }
     }
-    .icons {
+    &__icons {
       ul {
         display: flex;
-        list-style: none;
         li {
           margin-inline: 0.2rem;
-          a {
-            color: $mainFontColor;
-            &:hover {
-                color: $footerNavHoverColor;
-            }
+          a:hover {
+            color: $footerNavHoverColor;
           }
         }
       }
     }
   }
-  .others {
-    display: flex;
+  &__others {
     flex-grow: 1;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    // padding: 1rem;
-    .logo {
+    &__logo {
       height: 20%;
       padding-top: 1rem;
       svg {
         font-size: 3rem;
       }
     }
-    nav {
+    &__nav {
       height: 60%;
       padding-bottom: 0.8rem;
       text-transform: uppercase;
@@ -60,19 +46,14 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        list-style: none;
         li {
-          a {
-            color: $mainFontColor;
-            text-decoration: none;
-            &:hover {
-              color: $footerNavHoverColor;
-            }
+          a:hover {
+            color: $footerNavHoverColor;
           }
         }
       }
     }
-    .copyright {
+    &__copyright {
       display: flex;
       height: 20%;
       justify-content: flex-end;

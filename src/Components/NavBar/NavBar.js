@@ -5,7 +5,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import "./NavBar.css";
 // import { Link } from "react-router-dom";
 
-function NavBar() {
+function NavBar({ setShowModal }) {
 
   
 
@@ -22,7 +22,7 @@ function NavBar() {
             <DiamondIcon />
           </a>
         </div>
-        <div onClick={() => console.log("elo")}>
+        <div onClick={() => setShowModal(true)}>
           <MenuIcon />
         </div>
       </nav>
