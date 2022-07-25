@@ -1,6 +1,7 @@
 import { LoremIpsum } from "lorem-ipsum";
 
 import smallDragonImg from "../Styles/images/dragon-xsmall.jpg"
+import mediumDragonImg from "../Styles/images/dragon-medium.jpg"
 import bigDragonImg from "../Styles/images/dragon-big.jpg"
 
 
@@ -24,6 +25,7 @@ export const MainNewsData = [
       title: lorem.generateWords(3),
       description: lorem.generateSentences(4),
       imgSmall: smallDragonImg,
+      imgMedium: mediumDragonImg,
       imgBig: bigDragonImg,
       alt: lorem.generateSentences(1)
     }

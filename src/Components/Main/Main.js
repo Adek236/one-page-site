@@ -1,23 +1,15 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./Main.css";
 import { MainNewsData as data } from "../../Data/Data";
 import Button from "../Button/Button";
+import { useWindowWidth } from "../../Controllers/useWindowWidth";
 
 const Main = ({ children }) => {
-  const mainImageRef = useRef(null);
-
-  // useEffect(() => {
-  //   window.addEventListener("resize", () => {
-  //     console.log("width: ", mainImageRef.current.offsetWidth);
-  //     console.log("width WindoW: ", window.innerWidth);
-  //   });
-  // }, []);
-
+  const { windowWidth } = useWindowWidth();
   return (
     <main className="main">
       <section>
         <div
-          ref={mainImageRef}
           className="main__image"
           style={{ backgroundImage: `url(${data[0].imgSmall})` }}
         >
@@ -42,6 +34,7 @@ const Main = ({ children }) => {
       </section>
 
       <h2>Latest news:</h2>
+          {windowWidth>400?"elo":"hi"}
       <div>{children}</div>
     </main>
   );
