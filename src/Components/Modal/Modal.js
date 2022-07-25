@@ -1,5 +1,5 @@
 import React from "react";
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from "@mui/icons-material/Close";
 import DiamondIcon from "@mui/icons-material/Diamond";
 import PersonIcon from "@mui/icons-material/Person";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -10,8 +10,19 @@ import "./Modal.css";
 
 function Modal({ showModal, setShowModal }) {
   const displayModal = showModal ? "flex" : "none";
+
+  const backgroundClick = (e) => {
+    if (e.target === e.currentTarget) {
+      setShowModal(false);
+    }
+  };
+
   return (
-    <div className="modal" style={{ display: displayModal }}>
+    <div
+      className="modal"
+      style={{ display: displayModal }}
+      onClick={e => backgroundClick(e)}
+    >
       <div className="modal__container">
         <header className="flex-center">
           <nav>
@@ -25,7 +36,7 @@ function Modal({ showModal, setShowModal }) {
                 <DiamondIcon />
               </a>
             </div>
-            <div className="flex-center" onClick={() => setShowModal(false)}>
+            <div className="close-btn flex-center" onClick={() => setShowModal(false)}>
               <CloseIcon />
             </div>
           </nav>

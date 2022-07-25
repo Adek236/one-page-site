@@ -12,8 +12,10 @@
   flex-direction: column;
   align-items: center;
   min-height: 100%;
-  width: 40%;
+  width: 55%;
   background-color: #000000;
+  -webkit-animation: showModalAnimation 0.5s;
+          animation: showModalAnimation 0.5s;
 }
 @media (max-width: 615px) {
   .modal__container {
@@ -31,8 +33,27 @@
   align-items: center;
   padding: 0.3rem;
 }
-.modal__container > header > nav > * svg {
+.modal__container > header > nav .close-btn {
+  cursor: pointer;
+}
+.modal__container > header > nav > div:nth-child(1) > * svg {
   font-size: 2rem;
+  color: #ffffff;
+}
+.modal__container > header > nav > div:nth-child(1) > * svg:hover {
+  color: rgb(235, 222, 194);
+}
+.modal__container > header > nav > div:nth-child(2) > * svg {
+  font-size: 2.5rem;
+}
+.modal__container > header > nav > div:nth-child(2) > * svg:hover {
+  color: rgb(192, 180, 153);
+}
+.modal__container > header > nav > div:nth-child(3) > svg {
+  font-size: 2rem;
+}
+.modal__container > header > nav > div:nth-child(3) > svg:hover {
+  color: rgb(192, 180, 153);
 }
 .modal__container > main {
   display: flex;
@@ -45,9 +66,17 @@
 .modal__container > main > * ul > li {
   padding: 0.5rem;
 }
+@media (max-height: 288px) {
+  .modal__container > main > * ul > li {
+    padding: 0;
+  }
+}
 .modal__container > main > * ul > li > a {
   letter-spacing: 0.1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+.modal__container > main > * ul > li > a:hover {
+  color: rgb(192, 180, 153);
 }
 .modal__container > footer {
   flex-direction: column;
@@ -61,4 +90,25 @@
 }
 .modal__container > footer > .socials-nav nav ul > li {
   margin-inline: 0.1rem;
+}
+.modal__container > footer > .socials-nav nav ul > li > a:hover {
+  color: rgb(192, 180, 153);
+}
+
+@-webkit-keyframes showModalAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes showModalAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }/*# sourceMappingURL=Modal.css.map */

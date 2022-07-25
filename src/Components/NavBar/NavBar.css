@@ -23,12 +23,19 @@
 .nav-bar .nav-mobile div svg {
   color: #ffffff;
 }
+.nav-bar .nav-mobile div svg:hover {
+  color: rgb(235, 222, 194);
+}
 .nav-bar .nav-mobile div:nth-child(2) svg {
   color: rgb(235, 222, 194);
   font-size: 3rem;
 }
+.nav-bar .nav-mobile div:nth-child(2) svg:hover {
+  color: rgb(192, 180, 153);
+}
 .nav-bar .nav-mobile div:nth-child(3) svg:hover {
   cursor: pointer;
+  color: rgb(192, 180, 153);
 }
 @media (min-width: 993px) {
   .nav-bar .nav-mobile {
@@ -44,6 +51,9 @@
 }
 .nav-bar .nav-desktop > div svg {
   font-size: 3rem;
+}
+.nav-bar .nav-desktop > div svg:hover {
+  color: rgb(192, 180, 153);
 }
 .nav-bar .nav-desktop > ul {
   display: flex;

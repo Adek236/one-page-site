@@ -22,16 +22,23 @@
       display: flex;
       svg {
         color: $mainFontColorSecondary;
+        &:hover {
+          color: $hoverColorSecondary;
+        }
       }
       &:nth-child(2) {
         svg {
           color: $mainFontColor;
           font-size: 3rem;
+          &:hover {
+            color: $hoverColorPriority;
+          }
         }
       }
       &:nth-child(3) {
         svg:hover {
           cursor: pointer;
+          color: $hoverColorPriority;
         }
       }
     }
@@ -47,6 +54,9 @@
       padding-left: 4rem;
       svg {
         font-size: 3rem;
+        &:hover {
+          color: $hoverColorPriority;
+        }
       }
     }
     > ul {
