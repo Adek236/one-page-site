@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Main.css";
 import { MainNewsData as data } from "../../Data/Data";
 import Button from "../Button/Button";
 
 const Main = ({ children }) => {
+  const mainImageRef = useRef(null);
+
+  // useEffect(() => {
+  //   window.addEventListener("resize", () => {
+  //     console.log("width: ", mainImageRef.current.offsetWidth);
+  //     console.log("width WindoW: ", window.innerWidth);
+  //   });
+  // }, []);
+
   return (
     <main className="main">
-      {/* <img src={data[0].imgSmall} alt={data[0].alt} /> */}
       <section>
         <div
+          ref={mainImageRef}
           className="main__image"
           style={{ backgroundImage: `url(${data[0].imgSmall})` }}
         >

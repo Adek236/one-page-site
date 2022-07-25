@@ -12,8 +12,22 @@ import Guides from "./Components/Guides/Guides";
 import Offers from "./Components/Offers/Offers";
 import Modal from "./Components/Modal/Modal";
 
+import  getWindowDimensions  from "./Controllers/useWindowWith";
+
+const Component = () => {
+  const { width } = getWindowDimensions();
+
+  return (
+    <div>
+      {console.log("4- ", width)}
+      width: {width}
+    </div>
+  );
+}
+
 function App() {
   const [showModal, setShowModal] = useState(false);
+  // const { windowWith } = useWindowWith();
   return (
     <Layout>
       <Modal showModal={showModal} setShowModal={setShowModal} />
@@ -21,6 +35,7 @@ function App() {
         <NavBar setShowModal={setShowModal} />
       </Header>
       <Main>
+        <Component/>
         <FourBox>
           <News />
           <News />
