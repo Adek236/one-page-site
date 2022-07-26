@@ -24,18 +24,21 @@
       flex-direction: column;
       width: 40%;
       margin-left: 4rem;
+      margin-right: 4rem;
       @media (min-width: $newsBreakPointMedium) {
         display: flex;
       }
       &__info {
         &__prev-title {
           font-size: 0.8rem;
+          text-transform: uppercase;
         }
         > h2 {
-          font-size: 2.5rem;
+          font-size: 3rem;
+          text-transform: capitalize;
         }
         > p {
-          padding: 1rem 0;
+          padding: 0.8rem 0;
         }
       }
       &__btns {
@@ -64,10 +67,16 @@
       width: 75%;
       &__prev-title {
         font-size: 0.85rem;
+        text-transform: uppercase;
+      }
+      > h2 {
+        text-transform: capitalize;
       }
       > p {
-        padding-top: 1rem;
+        padding-top: 0.7rem;
+        padding-bottom: 0.3rem;
         font-size: clamp(0.3rem, 2.2vw, 1rem);
+        text-align: center;
       }
     }
     &__btns {

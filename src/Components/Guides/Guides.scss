@@ -25,9 +25,11 @@
     border-top: 0.05rem solid $borderColorPrimary;
     &__prev-title {
       font-size: 0.8rem;
+      text-transform: uppercase;
     }
     > h2 {
       font-size: 1.3rem;
+      text-transform: capitalize;
     }
   }
   &:hover {

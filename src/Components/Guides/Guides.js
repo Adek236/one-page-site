@@ -9,7 +9,7 @@ const Guides = ({ id }) => {
         className="guides__image"
         style={{ backgroundImage: `url(${data[id].imgBig})` }}
       ></div>
-      <div className="guides__desc">
+      <div className="guides__desc"> 
         <div className="guides__desc__prev-title text-shadow">{data[id].prevTitle}</div>
         <h2>{data[id].title}</h2>
       </div>

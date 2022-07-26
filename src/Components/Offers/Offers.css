@@ -25,6 +25,7 @@
   flex-direction: column;
   width: 40%;
   margin-left: 4rem;
+  margin-right: 4rem;
 }
 @media (min-width: 993px) {
   .offers__image__desc {
@@ -33,12 +34,14 @@
 }
 .offers__image__desc__info__prev-title {
   font-size: 0.8rem;
+  text-transform: uppercase;
 }
 .offers__image__desc__info > h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  text-transform: capitalize;
 }
 .offers__image__desc__info > p {
-  padding: 1rem 0;
+  padding: 0.8rem 0;
 }
 .offers__image__desc__btns {
   display: flex;
@@ -67,10 +70,16 @@
 }
 .offers__desc__info__prev-title {
   font-size: 0.85rem;
+  text-transform: uppercase;
+}
+.offers__desc__info > h2 {
+  text-transform: capitalize;
 }
 .offers__desc__info > p {
-  padding-top: 1rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.3rem;
   font-size: clamp(0.3rem, 2.2vw, 1rem);
+  text-align: center;
 }
 .offers__desc__btns {
   display: flex;

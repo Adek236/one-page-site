@@ -25,9 +25,11 @@
 }
 .guides__desc__prev-title {
   font-size: 0.8rem;
+  text-transform: uppercase;
 }
 .guides__desc > h2 {
   font-size: 1.3rem;
+  text-transform: capitalize;
 }
 .guides:hover {
   border: 1px solid rgb(235, 222, 194);

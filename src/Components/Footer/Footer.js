@@ -39,6 +39,9 @@ const Footer = () => {
         <nav className="main-footer__others__nav">
           <ul>
             <li>
+              <a href="/">Credits</a>
+            </li>
+            <li>
               <a href="/">About</a>
             </li>
             <li>
@@ -49,9 +52,6 @@ const Footer = () => {
             </li>
             <li>
               <a href="/">Cookies</a>
-            </li>
-            <li>
-              <a href="/">Api</a>
             </li>
           </ul>
         </nav>
