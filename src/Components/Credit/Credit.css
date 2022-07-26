@@ -1,13 +1,28 @@
-.credit {
+.credits {
   z-index: 103;
   position: fixed;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0);
   -webkit-animation: showModalAnimation 0.5s;
           animation: showModalAnimation 0.5s;
+}
+.credits__wrapper {
+  flex-direction: column;
+  width: 100%;
+}
+.credits__wrapper__nav svg {
+  font-size: 3rem;
+}
+.credits__wrapper__nav svg:hover {
+  cursor: pointer;
+  color: #c0b499;
+}
+.credits__wrapper__lists {
+  padding: 1rem;
+  font-size: 0.8rem;
 }
 
 @-webkit-keyframes showModalAnimation {

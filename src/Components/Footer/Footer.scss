@@ -47,6 +47,10 @@
         flex-direction: column;
         align-items: center;
         li {
+          .credits-btn:hover {
+            cursor: pointer;
+            color: $footerNavHoverColor;
+          }
           a:hover {
             color: $footerNavHoverColor;
           }

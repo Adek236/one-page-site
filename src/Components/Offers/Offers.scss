@@ -58,6 +58,9 @@
     justify-content: center;
     background-color: $bgColorSecondary;
     border-top: 0.05rem solid $borderColorPrimary;
+    @media (min-width: $newsBreakPointMedium) {
+      display: none;
+    }
     &__info {
       display: flex;
       flex-direction: column;
@@ -65,29 +68,43 @@
       justify-content: center;
       height: 70%;
       width: 75%;
+      @media (max-width: $newsBreakPointSmall) {
+        height: 65%;
+      }
       &__prev-title {
         font-size: 0.85rem;
         text-transform: uppercase;
+        @media (max-width: $newsBreakPointSmall) {
+          font-size: 0.5rem;
+        }
       }
       > h2 {
         text-transform: capitalize;
+        @media (max-width: $newsBreakPointSmall) {
+          font-size: 1rem;
+        }
       }
       > p {
         padding-top: 0.7rem;
         padding-bottom: 0.3rem;
         font-size: clamp(0.3rem, 2.2vw, 1rem);
         text-align: center;
+        @media (max-width: $newsBreakPointSmall) {
+          padding-top: 0;
+          padding-bottom: 0;
+          font-size: clamp(0.3rem, 2.4vw, 1rem);
+        }
       }
     }
     &__btns {
       display: flex;
       height: 30%;
+      @media (max-width: $newsBreakPointSmall) {
+        height: 35%;
+      }
       > div {
         margin-inline: 0.6rem;
       }
-    }
-    @media (min-width: $newsBreakPointMedium) {
-      display: none;
     }
   }
   @media (min-width: $newsBreakPointMedium) {

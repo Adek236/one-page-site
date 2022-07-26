@@ -5,7 +5,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-const Footer = () => {
+const Footer = ({ setShowCredit }) => {
   return (
     <footer className="main-footer">
       <div className="main-footer__socials flex-center">
@@ -39,7 +39,8 @@ const Footer = () => {
         <nav className="main-footer__others__nav">
           <ul>
             <li>
-              <a href="/">Credits</a>
+              <div className="credits-btn" onClick={()=>setShowCredit(true)}>Credits</div>
+              {/* <div className="credits" onClick={() => setShowCredit(true)}>Credits</div> */}
             </li>
             <li>
               <a href="/">About</a>
@@ -55,7 +56,9 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
-        <div className="main-footer__copyright text-shadow">2022 ALL RIGHTS RESERVED.</div>
+        <div className="main-footer__copyright text-shadow">
+          2022 ALL RIGHTS RESERVED.
+        </div>
       </div>
     </footer>
   );

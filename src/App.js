@@ -11,40 +11,43 @@ import Footer from "./Components/Footer/Footer";
 import Guides from "./Components/Guides/Guides";
 import Offers from "./Components/Offers/Offers";
 import Modal from "./Components/Modal/Modal";
+import Credit from "./Components/Credit/Credit";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+  const [showCredit, setShowCredit] = useState(false);
   return (
     <Layout>
+      <Credit showCredit={showCredit} setShowCredit={setShowCredit} />
       <Modal showModal={showModal} setShowModal={setShowModal} />
       <Header>
         <NavBar setShowModal={setShowModal} />
       </Header>
       <Main>
         <FourBox>
-          <News id="0"/>
-          <News id="1"/>
-          <News id="2"/>
-          <News id="3"/>
+          <News id="0" />
+          <News id="1" />
+          <News id="2" />
+          <News id="3" />
         </FourBox>
         <DoubleBox>
-          <Guides id="0"/>
-          <Guides id="1"/>
+          <Guides id="0" />
+          <Guides id="1" />
         </DoubleBox>
         <SingleBox>
           <Offers id="0" descSide="right" />
-          <Offers id="1"/>
+          <Offers id="1" />
           <Offers id="2" descSide="right" />
         </SingleBox>
         <DoubleBox>
-          <Guides id="2"/>
-          <Guides id="3"/>
+          <Guides id="2" />
+          <Guides id="3" />
         </DoubleBox>
         <SingleBox>
-          <Offers id="3"/>
+          <Offers id="3" />
         </SingleBox>
       </Main>
-      <Footer>Footer</Footer>
+      <Footer setShowCredit={setShowCredit} />
     </Layout>
   );
 }

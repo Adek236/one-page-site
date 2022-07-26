@@ -1,14 +1,29 @@
 @import "../../Styles/Variables.scss";
 
-.credit {
+.credits {
   z-index: 103;
   position: fixed;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0);
   animation: showModalAnimation 0.5s;
+  &__wrapper {
+    flex-direction: column;
+    width: 100%;
+    &__nav svg {
+      font-size: 3rem;
+      &:hover {
+        cursor: pointer;
+        color: $footerNavHoverColor;
+      }
+    }
+    &__lists {
+      padding: 1rem;
+      font-size: 0.8rem;
+    }
+  }
 }
 
 @keyframes showModalAnimation {
