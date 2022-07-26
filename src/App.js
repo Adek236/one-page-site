@@ -37,26 +37,26 @@ function App() {
       <Main>
         <Component/>
         <FourBox>
-          <News />
-          <News />
-          <News />
-          <News />
+          <News id="0"/>
+          <News id="1"/>
+          <News id="2"/>
+          <News id="3"/>
         </FourBox>
         <DoubleBox>
-          <Guides />
-          <Guides />
+          <Guides id="0"/>
+          <Guides id="1"/>
         </DoubleBox>
         <SingleBox>
-          <Offers descSide="right" />
-          <Offers />
-          <Offers descSide="right" />
+          <Offers id="0" descSide="right" />
+          <Offers id="1"/>
+          <Offers id="2" descSide="right" />
         </SingleBox>
         <DoubleBox>
-          <Guides />
-          <Guides />
+          <Guides id="2"/>
+          <Guides id="3"/>
         </DoubleBox>
         <SingleBox>
-          <Offers />
+          <Offers id="3"/>
         </SingleBox>
       </Main>
       <Footer>Footer</Footer>

@@ -1,9 +1,9 @@
 import React from "react";
 import "./Offers.css";
-import { MainNewsData as data } from "../../Data/Data";
+import { OffersData as data } from "../../Data/Data";
 import Button from "../Button/Button";
 
-const Offers = ({ descSide }) => {
+const Offers = ({ id, descSide }) => {
 
   const whichDescSide = descSide === "right" ? "flex-end" : "flex-start";
 
@@ -11,40 +11,36 @@ const Offers = ({ descSide }) => {
     <section className="offers">
       <div
         className="offers__image"
-        style={{ backgroundImage: `url(${data[0].imgSmall})`,
+        style={{ backgroundImage: `url(${data[id].imgBig})`,
         justifyContent: whichDescSide }}
       >
         {/* large screen */}
         <div className="offers__image__desc">
           <div className="offers__image__desc__info">
-            <div className="offers__image__desc__info__prev-title text-shadow">Prev title</div>
-            <h2>Title Offers</h2>
+            <div className="offers__image__desc__info__prev-title text-shadow">{data[id].prevTitle}</div>
+            <h2>{data[id].title}</h2>
             <p>
-              Short description offer Short description offer Short description
-              offer Short description offer Short description offer Short
-              description offer
+              {data[id].desc}
             </p>
           </div>
           <div className="offers__image__desc__btns">
-            <Button bgColor="secondary" />
-            <Button />
+            <Button title={data[id].btnTitle1} bgColor="secondary" />
+            <Button title={data[id].btnTitle2}/>
           </div>
         </div>
       </div>
       {/* small screen  */}
       <div className="offers__desc">
         <div className="offers__desc__info">
-          <div className="offers__desc__info__prev-title text-shadow">Prev title</div>
-          <h2>Title Offers</h2>
+          <div className="offers__desc__info__prev-title text-shadow">{data[id].prevTitle}</div>
+          <h2>{data[id].title}</h2>
           <p>
-            Short description offer Short description offer Short description
-            offer Short description offer Short description offer Short
-            description offer
+            {data[id].desc}
           </p>
         </div>
         <div className="offers__desc__btns">
-          <Button />
-          <Button bgColor="secondary" />
+          <Button title={data[id].btnTitle1}/>
+          <Button title={data[id].btnTitle2} bgColor="secondary" />
         </div>
       </div>
     </section>
