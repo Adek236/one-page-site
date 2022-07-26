@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ({ bgColor }) => {
+const Button = ({ title, bgColor }) => {
   return (
     <div className={
       bgColor === "secondary" ? "buttonOuter secondaryBorder" : "buttonOuter"
@@ -11,7 +11,7 @@ const Button = ({ bgColor }) => {
           bgColor === "secondary" ? "buttonInner secondaryBg" : "buttonInner"
         }
       >
-        <div className="buttonTitle text-shadow">Button</div>
+        <div className="buttonTitle text-shadow">{title}</div>
         <a className="fill-container" href="/elo"> </a>
       </div>
     </div>

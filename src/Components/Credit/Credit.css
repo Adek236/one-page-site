@@ -1,0 +1,29 @@
+.credit {
+  z-index: 103;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-animation: showModalAnimation 0.5s;
+          animation: showModalAnimation 0.5s;
+}
+
+@-webkit-keyframes showModalAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes showModalAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}/*# sourceMappingURL=Credit.css.map */

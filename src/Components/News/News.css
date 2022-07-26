@@ -30,6 +30,7 @@
   }
 }
 .news__desc > h2 {
+  text-transform: capitalize;
   font-size: clamp(0.5rem, 2vw, 5rem);
 }
 @media (min-width: 993px) {
