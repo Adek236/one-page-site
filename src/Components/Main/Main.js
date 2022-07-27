@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useRef} from "react";
 import "./Main.css";
 import { MainNewsData as data } from "../../Data/Data";
 import Button from "../Button/Button";
-import { useWindowWidth } from "../../Controllers/useWindowWidth";
+import {
+  useWindowWidth,
+  getImageSizeByWidth,
+} from "../../Controllers/controllers";
 
 const Main = ({ children }) => {
-  const { windowWidth } = useWindowWidth();
+  const mainRef = useRef(null);
+  const { windowWidth } = useWindowWidth(mainRef);
+  const imageSize = getImageSizeByWidth(windowWidth);
   return (
-    <main className="main">
+    <main ref={mainRef} className="main">
+      {console.log("a", windowWidth)}
       <section>
         <div
           className="main__image"
-          style={{ backgroundImage: `url(${data[0].imgSmall})` }}
+          style={{ backgroundImage: `url(${data[0][imageSize]})` }}
         >
           {/* large screen */}
           <div className="main__image__blackout fill-container"></div>
@@ -34,7 +40,6 @@ const Main = ({ children }) => {
       </section>
 
       <h2>Latest news:</h2>
-          {windowWidth>400?"elo":"hi"}
       <div>{children}</div>
     </main>
   );

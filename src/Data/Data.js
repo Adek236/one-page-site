@@ -74,7 +74,7 @@ export const MainNewsData = [
       description: lorem.generateSentences(4),
       imgSmall: smallDragonImg,
       imgMedium: mediumDragonImg,
-      imgBig: bigDragonImg,
+      imgLarge: bigDragonImg,
       alt: lorem.generateSentences(1)
     }
 ];
@@ -86,7 +86,7 @@ export const NewsData = [
     title: lorem.generateWords(6),
     imgSmall: giantImgSmall,
     imgMedium: giantImgMedium,
-    imgBig: giantImgLarge,
+    imgLarge: giantImgLarge,
     alt: lorem.generateSentences(1),
   },
   {
@@ -95,7 +95,7 @@ export const NewsData = [
     title: lorem.generateWords(5),
     imgSmall: holyImgSmall,
     imgMedium: holyImgMedium,
-    imgBig: holyImgLarge,
+    imgLarge: holyImgLarge,
     alt: lorem.generateSentences(1),
   },
   {
@@ -104,7 +104,7 @@ export const NewsData = [
     title: lorem.generateWords(7),
     imgSmall: knightImgSmall,
     imgMedium: knightImgMedium,
-    imgBig: knightImgLarge,
+    imgLarge: knightImgLarge,
     alt: lorem.generateSentences(1),
   },
   {
@@ -113,7 +113,7 @@ export const NewsData = [
     title: lorem.generateWords(4),
     imgSmall: purgatoryImgSmall,
     imgMedium: purgatoryImgMedium,
-    imgBig: purgatoryImgLarge,
+    imgLarge: purgatoryImgLarge,
     alt: lorem.generateSentences(1),
   },
 ];
@@ -125,7 +125,7 @@ export const GuidesData = [
     title: lorem.generateWords(3),
     imgSmall: doomsdayImgSmall,
     imgMedium: doomsdayImgMedium,
-    imgBig: doomsdayImgLarge,
+    imgLarge: doomsdayImgLarge,
     alt: lorem.generateSentences(1),
   },
   {
@@ -134,7 +134,7 @@ export const GuidesData = [
     title: lorem.generateWords(3),
     imgSmall: dungeonImgSmall,
     imgMedium: dungeonImgMedium,
-    imgBig: dungeonImgLarge,
+    imgLarge: dungeonImgLarge,
     alt: lorem.generateSentences(1),
   },
   {
@@ -143,7 +143,7 @@ export const GuidesData = [
     title: lorem.generateWords(3),
     imgSmall: explosionImgSmall,
     imgMedium: explosionImgMedium,
-    imgBig: explosionImgLarge,
+    imgLarge: explosionImgLarge,
     alt: lorem.generateSentences(1),
   },
   {
@@ -152,7 +152,7 @@ export const GuidesData = [
     title: lorem.generateWords(3),
     imgSmall: faceImgSmall,
     imgMedium: faceImgMedium,
-    imgBig: faceImgLarge,
+    imgLarge: faceImgLarge,
     alt: lorem.generateSentences(1),
   },
 ];
@@ -167,7 +167,7 @@ export const OffersData = [
     btnTitle2: lorem.generateWords(1),
     imgSmall: ancientImgSmall,
     imgMedium: ancientImgMedium,
-    imgBig: ancientImgLarge,
+    imgLarge: ancientImgLarge,
     alt: lorem.generateSentences(1),
   },
   {
@@ -179,7 +179,7 @@ export const OffersData = [
     btnTitle2: lorem.generateWords(1),
     imgSmall: canyonImgSmall,
     imgMedium: canyonImgMedium,
-    imgBig: canyonImgLarge,
+    imgLarge: canyonImgLarge,
     alt: lorem.generateSentences(1),
   },
   {
@@ -191,7 +191,7 @@ export const OffersData = [
     btnTitle2: lorem.generateWords(1),
     imgSmall: castleImgSmall,
     imgMedium: castleImgMedium,
-    imgBig: castleImgLarge,
+    imgLarge: castleImgLarge,
     alt: lorem.generateSentences(1),
   },
   {
@@ -203,7 +203,7 @@ export const OffersData = [
     btnTitle2: lorem.generateWords(1),
     imgSmall: cityImgSmall,
     imgMedium: cityImgMedium,
-    imgBig: cityImgLarge,
+    imgLarge: cityImgLarge,
     alt: lorem.generateSentences(1),
   },
 ];

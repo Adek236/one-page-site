@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Offers.css";
 import { OffersData as data } from "../../Data/Data";
 import Button from "../Button/Button";
+import {
+  useWindowWidth,
+  getImageSizeByWidth,
+} from "../../Controllers/controllers";
 
 const Offers = ({ id, descSide }) => {
-
+  const offersRef = useRef(null);
+  const { windowWidth } = useWindowWidth(offersRef);
+  const imageSize = getImageSizeByWidth(windowWidth);
   const whichDescSide = descSide === "right" ? "flex-end" : "flex-start";
-
   return (
     <section className="offers">
-      <div
+      <div 
+        ref={offersRef}
         className="offers__image"
-        style={{ backgroundImage: `url(${data[id].imgBig})`,
+        style={{ backgroundImage: `url(${data[id][imageSize]})`,
         justifyContent: whichDescSide }}
       >
         {/* large screen */}
