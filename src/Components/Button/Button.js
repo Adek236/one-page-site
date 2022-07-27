@@ -12,7 +12,7 @@ const Button = ({ title, bgColor }) => {
         }
       >
         <div className="buttonTitle text-shadow">{title}</div>
-        <a className="fill-container" href="/elo"> </a>
+        <a role="button" aria-labelledby={title} className="fill-container" href="/"> </a>
       </div>
     </div>
   );

@@ -12,35 +12,45 @@ const Footer = ({ setShowCredit }) => {
         <div className="main-footer__socials__title">
           <h3>OUR SOCIALS</h3>
         </div>
-        <div className="main-footer__socials__icons">
+        <nav aria-label="Secondary" className="main-footer__socials__icons">
           <ul>
             <li>
-              <a href="/">
+              <a role="button" aria-label="Facebook" href="/">
                 <FacebookIcon />
               </a>
             </li>
             <li>
-              <a href="/">
+              <a role="button" aria-label="Instagram" href="/">
                 <InstagramIcon />
               </a>
             </li>
             <li>
-              <a href="/">
+              <a role="button" aria-label="Twitter" href="/">
                 <TwitterIcon />
               </a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
       <div className="main-footer__others flex-center">
         <div className="main-footer__others__logo">
           <DiamondIcon />
         </div>
-        <nav className="main-footer__others__nav">
+        <nav aria-label="Third" className="main-footer__others__nav">
           <ul>
             <li>
-              <div className="credits-btn" onClick={()=>setShowCredit(true)}>Credits</div>
-              {/* <div className="credits" onClick={() => setShowCredit(true)}>Credits</div> */}
+              <div
+                tabIndex="0"
+                className="credits-btn"
+                onClick={() => setShowCredit(true)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    setShowCredit(true);
+                  }
+                }}
+              >
+                Credits
+              </div>
             </li>
             <li>
               <a href="/">About</a>

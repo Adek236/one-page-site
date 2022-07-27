@@ -23,7 +23,7 @@ function App() {
       <Header>
         <NavBar setShowModal={setShowModal} />
       </Header>
-      <Main>
+      <Main id="0">
         <FourBox>
           <News id="0" />
           <News id="1" />

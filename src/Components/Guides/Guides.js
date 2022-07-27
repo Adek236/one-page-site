@@ -21,7 +21,7 @@ const Guides = ({ id }) => {
         <div className="guides__desc__prev-title text-shadow">{data[id].prevTitle}</div>
         <h2>{data[id].title}</h2>
       </div>
-      <a className="fill-container" href="/" > </a>
+      <a role="button" aria-label={data[id].title} className="fill-container" href="/" > </a>
     </section>
   );
 };

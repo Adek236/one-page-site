@@ -7,7 +7,7 @@ import {
   getImageSizeByWidth,
 } from "../../Controllers/controllers";
 
-const Main = ({ children }) => {
+const Main = ({ id, children }) => {
   const mainRef = useRef(null);
   const { windowWidth } = useWindowWidth(mainRef);
   const imageSize = getImageSizeByWidth(windowWidth);
@@ -17,25 +17,25 @@ const Main = ({ children }) => {
       <section>
         <div
           className="main__image"
-          style={{ backgroundImage: `url(${data[0][imageSize]})` }}
+          style={{ backgroundImage: `url(${data[id][imageSize]})` }}
         >
           {/* large screen */}
           <div className="main__image__blackout fill-container"></div>
           <div className="main__image__title">
             {/* both screen */}
-            <h1>{data[0].title}</h1>
+            <h1>{data[id].title}</h1>
           </div>
-          <p className="main__image__desc">{data[0].description}</p>
+          <p className="main__image__desc">{data[id].description}</p>
           <div className="main__image__buttons">
-            <Button bgColor="secondary" />
-            <Button />
+            <Button title={data[id].btnTitle1} bgColor="secondary" />
+            <Button title={data[id].btnTitle2}/>
           </div>
         </div>
         {/* small screen  */}
-        <p>{data[0].description}</p>
+        <p>{data[id].description}</p>
         <div className="main__buttons">
-          <Button bgColor="secondary" />
-          <Button />
+          <Button title={data[id].btnTitle1} bgColor="secondary" />
+          <Button title={data[id].btnTitle2}/>
         </div>
       </section>
 

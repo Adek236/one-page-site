@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useRef } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import "./Credit.css";
 // import { Link } from "react-router-dom";
 
 function Credit({ showCredit, setShowCredit }) {
   const displayCredit = showCredit ? "flex" : "none";
+  const creditRef = useRef(null);
   return (
-    <div className="credits" style={{ display: displayCredit }}>
+    <div
+      className="credits"
+      style={{ display: displayCredit }}
+      onAnimationEnd={() => creditRef.current.focus()}
+    >
       <div className="credits__wrapper flex-center">
         <div
+          tabIndex="0"
+          ref={creditRef}
           className="credits__wrapper__nav"
           onClick={() => setShowCredit(false)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              setShowCredit(false);
+            }
+          }}
         >
           <CloseIcon />
         </div>
@@ -78,7 +90,14 @@ function Credit({ showCredit, setShowCredit }) {
               </a>
             </li>
             <li>
-              <a href="https://www.freepik.com/photos/fiction">
+              <a
+                onKeyDown={(e) => {
+                  if (e.key === "Tab") {
+                    creditRef.current.focus();
+                  }
+                }}
+                href="https://www.freepik.com/photos/fiction"
+              >
                 Fiction photo created by liuzishan - www.freepik.com
               </a>
             </li>

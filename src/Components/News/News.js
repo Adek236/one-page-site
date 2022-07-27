@@ -21,7 +21,7 @@ const News = ({ id }) => {
         <h2>{data[id].title}</h2>
       </div>
       <div className="news__blackout fill-container"></div>
-      <a className="fill-container" href="/"> </a>
+      <a role="button" aria-label={data[id].title} className="fill-container" href="/"> </a>
     </section>
   );
 };
