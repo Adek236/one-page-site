@@ -27,10 +27,10 @@
         align-items: center;
         height: clamp(6rem, 10vw, 20rem);
         width: 100%;
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
         h1 {
           line-height: 1;
-          padding: 1rem;
+          padding: 0 1rem;
           text-align: center;
           font-size: clamp(1rem, 10vw, 5rem);
           font-family: $mainTitleFont;
@@ -78,7 +78,7 @@
       }
     }
     > p {
-      padding: 1rem;
+      padding: 0 1rem;
       text-align: center;
       @media (min-width: $newsBreakPointLarge) {
         display: none;

@@ -31,7 +31,7 @@ const Main = ({ id, children }) => {
             <Button title={data[id].btnTitle2}/>
           </div>
         </div>
-        {/* small screen  */}
+        {/* small screen  */} 
         <p>{data[id].description}</p>
         <div className="main__buttons">
           <Button title={data[id].btnTitle1} bgColor="secondary" />

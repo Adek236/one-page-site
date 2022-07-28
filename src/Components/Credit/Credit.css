@@ -18,7 +18,7 @@
 }
 .credits__wrapper__nav svg:hover {
   cursor: pointer;
-  color: #c0b499;
+  color: rgb(192, 180, 153);
 }
 .credits__wrapper__lists {
   padding: 1rem;

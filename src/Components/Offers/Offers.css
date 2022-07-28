@@ -9,7 +9,7 @@
 }
 .offers__image {
   height: 50%;
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
   background-size: cover;
   background-position: center;
 }
@@ -37,6 +37,7 @@
   text-transform: uppercase;
 }
 .offers__image__desc__info > h2 {
+  margin-left: -3px;
   font-size: 3rem;
   text-transform: capitalize;
 }
