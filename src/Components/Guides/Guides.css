@@ -20,7 +20,7 @@
   height: 30%;
   align-items: center;
   justify-content: center;
-  background-color: rgb(16, 0, 0);
+  background-color: rgb(24, 0, 0);
   border-top: 0.05rem solid rgb(64, 64, 64);
 }
 .guides__desc__prev-title {
